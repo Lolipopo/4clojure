@@ -1,3 +1,8 @@
-#(first (take-last 1 %))
-#(first (reverse %))
+#score 18
 (comp first reverse)
+
+#score 18
+#(first (reverse %))
+
+#score 21
+#(first (take-last 1 %))
