@@ -1,3 +1,0 @@
-#(first (take-last 1 %))
-#(first (reverse %))
-(comp first reverse)
