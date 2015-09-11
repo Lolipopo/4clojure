@@ -1,0 +1,11 @@
+#score 18
+#(first (drop %2 %1))
+
+#score 52
+#(
+  loop [j %1 k %2]
+  (if (= 0 k)
+    (first j)
+    (recur (rest j) (dec k))
+   )
+  )
