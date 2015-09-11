@@ -1,0 +1,17 @@
+#score 48
+#(
+  take % (
+          map last (
+                     iterate (fn [[x y]] [y (+ x y)]) [0 1]
+                     )
+          )
+  )
+
+#score 77
+#(
+  loop [i %1 r '(1 1)]
+  (if (= i 2)
+    (reverse r)
+    (recur (dec i) (conj r (+ (first r) (second r))))
+    )
+  )
